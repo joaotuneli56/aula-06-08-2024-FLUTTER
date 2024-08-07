@@ -15,7 +15,7 @@ Operações assincronas mais comuns:
 
 - Lendo dados de um arquivo
 
-## Future<T>
+## Future`<T>`
 
 T --> são os diversos tipos de features que podemos criar
 
