@@ -5,7 +5,6 @@
 // 2 caso o email e senha sejão válidos, consulte o saldo do usuário informando o token e printando o resultado no console
 // 3 caso o email ou senha sejão inválidos, printe a mensagem de erro. 
 
-
 void main() async{
   String email = "email";
   String senha = "13";
@@ -42,3 +41,39 @@ Future<num> consultarSaldo(String token) async {
   
   return 2000;
 }
+
+
+// VERSÃO DO PROFESSOR
+
+//void main() async{
+//  Future<String> futureToken = login ("","");
+//  futureToken.then((String token)){
+//  consultarSaldo(token).then((num saldo){
+//   print(saldo);
+//   print("FIM!") 
+// }).catchError((error){
+//    print(error);
+// })
+//}
+//
+//Future<String> login(String email, String senha) async {
+//  Simulando um atraso de download de 2 segundos
+//  await Future.delayed(Duration(seconds: 2));
+//  
+//  if(email != 'email@email.com' || senha != '123') {
+//    throw Exception('email ou senha inválida');
+//  }
+//
+//  Simulando informações de token de acesso do usuário
+//  final token = 'bas89e8ahdkkdassd';
+//
+//  return token;
+//}
+//
+//Future<num> consultarSaldo(String token) async {
+//     Simulando um atraso de download de 3 segundos
+//  await Future.delayed(Duration(seconds: 3));
+//  
+//  return 2000;
+//}
+//
